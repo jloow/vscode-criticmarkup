@@ -1,0 +1,27 @@
+{
+    "Addition": {
+        "prefix": "Addition",
+        "body": "{++$1++}",
+        "description": "Add text."
+    },
+    "Deletion": {
+        "prefix": "Deletion",
+        "body": "{--$TM_SELECTED_TEXT--}",
+        "description": "Delete text."
+    },
+    "Substitution": {
+        "prefix": "Substitution",
+        "body": "{~~${TM_SELECTED_TEXT:$1}~>$2~~}",
+        "description": "Substitute text."
+    },
+    "Comment": {
+        "prefix": "Comment",
+        "body": "{>>$1<<}",
+        "description": "Add comment."
+    },
+    "Highlight": {
+        "prefix": "Highlight",
+        "body": "{==${TM_SELECTED_TEXT:$1}==}{>>$2<<}",
+        "description": "Highlight (and comment) text."
+    }
+}

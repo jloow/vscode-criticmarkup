@@ -1,0 +1,38 @@
+{
+    "injectionSelector": "L:meta.paragraph.markdown",
+    "patterns": [
+        { "include": "#addition" },
+        { "include": "#deletion" },
+        { "include": "#substitution" },
+        { "include": "#comment" },
+        { "include": "#highlight" }
+    ],
+    "repository": {
+        "addition": {
+            "begin": "{\\+\\+",
+            "end": "\\+\\+}",
+            "name": "criticmarkup.addition"
+        },
+        "deletion": {
+            "begin": "{--",
+            "end": "--}",
+            "name": "criticmarkup.deletion"
+        },
+        "substitution": {
+            "begin": "{~~",
+            "end": "~~}",
+            "name": "criticmarkup.substitution"
+        },
+        "comment": {
+            "begin": "{>>",
+            "end": "<<}",
+            "name": "criticmarkup.comment"
+        },
+        "highlight": {
+            "begin": "{==",
+            "end": "==}",
+            "name": "criticmarkup.highlight"
+        }
+    },
+    "scopeName": "criticmarkup.injection"
+}

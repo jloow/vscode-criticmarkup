@@ -1,0 +1,87 @@
+{
+	"name": "vscode-criticmarkup",
+	"displayName": "CriticMarkup for Visual Studio Code",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:markdown"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "markdown",
+				"path": "./snippets.json"
+			}
+		],
+		"keybindings": [
+			{
+				"key": "ctrl+shift+a",
+				"command": "editor.action.insertSnippet",
+				"when": "editorTextFocus",
+				"args": {
+					"name": "Addition"
+				}
+			},
+			{
+				"key": "ctrl+shift+d",
+				"command": "editor.action.insertSnippet",
+				"when": "editorTextFocus",
+				"args": {
+					"name": "Deletion"
+				}
+			},
+			{
+				"key": "ctrl+shift+s",
+				"command": "editor.action.insertSnippet",
+				"when": "editorTextFocus",
+				"args": {
+					"name": "Substitution"
+				}
+			},
+			{
+				"key": "ctrl+shift+c",
+				"command": "editor.action.insertSnippet",
+				"when": "editorTextFocus",
+				"args": {
+					"name": "Comment"
+				}
+			},
+			{
+				"key": "ctrl+shift+h",
+				"command": "editor.action.insertSnippet",
+				"when": "editorTextFocus",
+				"args": {
+					"name": "Highlight"
+				}
+			}
+		],
+		"grammars": [
+			{
+				"path": "./syntaxes/criticmarkup.json",
+				"scopeName": "criticmarkup.injection",
+				"injectTo": ["text.html.markdown"]
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
