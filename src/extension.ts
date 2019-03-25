@@ -5,6 +5,11 @@ export function activate(context: vscode.ExtensionContext) {
 
 	settings();
 
+	// Use?:
+	// if (!vscode.workspace...(editor.textMateRules...) {
+    //    settings();
+}
+
 }
 
 export function deactivate() {}
