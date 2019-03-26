@@ -7,8 +7,24 @@
 		"vscode": "^1.31.0"
 	},
 	"categories": [
+		"Snippets",
+		"Keymaps",
+		"Programming Languages",
 		"Other"
 	],
+	"keywords": [
+		"markdown",
+		"criticmarkup",
+		"critic markup"
+	],
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"bugs": {
+		"url": "https://github.com/jloow/vscode-criticmarkup/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jloow/vscode-criticmarkup.git"
+	},
 	"activationEvents": [
 		"onLanguage:markdown"
 	],
