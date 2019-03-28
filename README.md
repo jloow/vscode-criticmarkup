@@ -21,8 +21,7 @@ to convert the text you'll need converter.
 See the official [CriticMarkup User's Guide](http://criticmarkup.com/users-guide.php)
 for a full introduction.
 
-Use the following key bindings to use the CriticMarkup
-syntax:
+Use the following key bindings to use the CriticMarkup syntax:
 
 - Addition (`ctrl+shift+a`): Suggest an addition to the text.
 - Deletion (`ctrl+shift+d`): Suggest text to be deleted (will markup
@@ -50,16 +49,15 @@ The syntax highlight colors can be changed by modifying the following
 
 - The extension will automatically set syntax highlighting colors for
   the CriticMarkup syntax. It will do so only if no these setting
-  aren't already set. Currently, only one setting is checked; if some
-  settings are removed but not others, the extension won't reset the
-  settings.
+  aren't already set. Currently, only one setting is checked
+  (`criticmarkup.addition`); if some settings are removed but not
+  others, the extension won't reset the settings.
 
 - Currently, the extension does not work very well with Markdown All
   in One and other extensions that implements strikethrough text.
-  Since substitutions in CriticMarkup is marked using
-  `{~~foo~>bar~~}`, and the strikethrough syntax is `~~foo~~`, this
-  means that substitutions the text in the CriticMarkup syntax will
-  appear as strikethrough text. If you still want to use this
+  Since substitutions in CriticMarkup use the syntax `{~~foo~>bar~~}`,
+  and the strikethrough syntax is `~~foo~~`, the substitution syntax
+  will appear as strikethrough text. If you still want to use this
   extension together with Markdown All in One, it is recommended that
   you disable the "syntax decorations" option.
 
@@ -69,8 +67,7 @@ The syntax highlight colors can be changed by modifying the following
 ## Todo
 
 - [ ] Automatically distinguish between highlighting and commenting,
-      and just commenting.
-      .
+      and just commenting
 - [ ] Accept/reject changes
 - [ ] Jump to changes
 - [ ] Track changes functionality
