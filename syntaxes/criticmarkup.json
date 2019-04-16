@@ -1,5 +1,5 @@
 {
-    "injectionSelector": "L:meta.paragraph.markdown",
+    "injectionSelector": "L:text.html.markdown",
     "patterns": [
         { "include": "#addition" },
         { "include": "#deletion" },
