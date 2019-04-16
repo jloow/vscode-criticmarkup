@@ -2,7 +2,7 @@
 	"name": "vscode-criticmarkup",
 	"displayName": "CriticMarkup for Visual Studio Code",
 	"description": "A CriticMarkup extension for Visual Studio Code.",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
