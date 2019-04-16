@@ -11,5 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Jump to changes
 - Track changes functionality
 
-## [0.1.0] - 2019-03-xx
+## [0.1.1] - 2019-04-16
+
+- Improved support for markup that extends over multiple lines
+
+## [0.1.0] - 2019-03-28
 - Initial release
