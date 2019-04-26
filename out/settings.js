@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode = require("vscode");
-function settings() {
+function set() {
     return __awaiter(this, void 0, void 0, function* () {
         // Get current settings
         const currentSettings = vscode.workspace.getConfiguration('editor.tokenColorCustomizations');
@@ -69,5 +69,5 @@ function settings() {
         }
     });
 }
-exports.settings = settings;
+exports.set = set;
 //# sourceMappingURL=settings.js.map

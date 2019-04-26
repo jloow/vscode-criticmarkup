@@ -27,10 +27,30 @@
 		"url": "https://github.com/jloow/vscode-criticmarkup.git"
 	},
 	"activationEvents": [
-		"onLanguage:markdown"
+		"onLanguage:markdown",
+		"onCommand:criticmarkup.nextChange",
+		"onCommand:criticmarkup.prevCHange",
+		"onCommand:criticmarkup.test"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands": [
+			{
+				"command": "criticmarkup.nextChange",
+				"title": "Next Change",
+				"category": "CriticMarkup"
+			},
+			{
+				"command": "criticmarkup.prevChange",
+				"title": "Previous Change",
+				"category": "CriticMarkup"
+			},
+			{
+				"command": "criticmarkup.test",
+				"title": "Test",
+				"category": "CriticMarkup"
+			}
+		],
 		"snippets": [
 			{
 				"language": "markdown",
