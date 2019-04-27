@@ -9,7 +9,7 @@ function activate(context) {
         // Get the active text editor
         let editor = vscode.window.activeTextEditor;
         if (editor) {
-            editor.selection = changes.next(); // Select the encounted markup
+            editor.selection = changes.next(editor); // Select the encounted markup
             editor.revealRange(editor.selection); // Move view to found markup
         }
     });
@@ -19,7 +19,7 @@ function activate(context) {
         // Get the active text editor
         let editor = vscode.window.activeTextEditor;
         if (editor) {
-            editor.selection = changes.prev(); // Select the encounted markup
+            editor.selection = changes.prev(editor); // Select the encounted markup
             editor.revealRange(editor.selection); // Move view to found markup
         }
     });
