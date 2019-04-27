@@ -10,6 +10,7 @@ Implements support for CriticMarkup in Visual Studio Code.
 - Snippets with key bindings for suggesting additions, deletions and
   substitutions, as well as for commenting and highlighting.
 - Adds grammars and syntax highlighting
+- Cycle through changes in the document
 
 ## Requirements
 
@@ -32,6 +33,9 @@ Use the following key bindings to insert CriticMarkup markup:
 - Comment (`ctrl+shift+c`): Add a comment.
 - Highlight and comment (`ctrl+shift+h`): Highlight and comment the
   text (selected text will be highlighted).
+
+To cycle between changes, use the Command Palette and the commands
+`CriticMarkup: Next Change` and `CriticMarkup: Previous Change`.
 
 ## Extension Settings
 
@@ -69,15 +73,20 @@ The syntax highlight colors can be changed by modifying the following
 - [ ] Automatically distinguish between highlighting and commenting,
       and just commenting
 - [ ] Accept/reject changes
-- [ ] Jump to changes
+- [x] Jump to changes
 - [ ] Track changes functionality
 
 ## Release Notes
 
+## [0.2.0] - 2019-04-27
+
+- Implemented functionally to go to next/previous change
+- Tidied up code and repository
+
 ### [0.1.1] - 2019-04-16
 
-Improved support for markup that extends over multiple lines.
+- Improved support for markup that extends over multiple lines.
 
 ### [0.1.0] - 2019-03-28
 
-Initial release.
+- Initial release.
