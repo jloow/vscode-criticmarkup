@@ -1,7 +1,7 @@
 {
     "Addition": {
         "prefix": "Addition",
-        "body": "{++$1++}",
+        "body": "{++$TM_SELECTED_TEXT++}",
         "description": "Add text."
     },
     "Deletion": {
@@ -16,7 +16,7 @@
     },
     "Comment": {
         "prefix": "Comment",
-        "body": "{>>$1<<}",
+        "body": "{>>$TM_SELECTED_TEXT<<}",
         "description": "Add comment."
     },
     "Highlight": {
