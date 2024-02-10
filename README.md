@@ -1,3 +1,6 @@
+# THIS REPO IS NOW ARCHIVED
+This was my first and only extension for VSCode, which I somehow was able to put together with very little knowledge of JavaScript/TypeScript, VSCode and git/github (seems the `src` folder is missing but I'm *pretty* sure I never touched `.gitignore`). I suspect the code is quite horrible. My engagement with VSCode was very brief as I quite quickly moved onto vim and then Emacs. I was unaware of any interest in the extension, though now I see there's some open issues (I guess I never got any notifications?). Thank you for the interest shown, and sorry for the lack of attention!
+
 #  CriticMarkup for Visual Studio Code README
 
 A [CriticMarkup](http://criticmarkup.com/) extension for Visual
